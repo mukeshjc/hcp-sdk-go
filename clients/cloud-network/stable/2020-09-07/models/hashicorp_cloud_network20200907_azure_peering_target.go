@@ -37,6 +37,9 @@ type HashicorpCloudNetwork20200907AzurePeeringTarget struct {
 
 	// vnet_name is the name of the VNet.
 	VnetName string `json:"vnet_name,omitempty"`
+
+	AllowForwardedTraffic bool `json:"allow_forwarded_traffic,omitempty"`
+	UseRemoteGateways     bool `json:"use_remote_gateways,omitempty"`
 }
 
 // Validate validates this hashicorp cloud network 20200907 azure peering target
